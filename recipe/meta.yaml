@@ -1,5 +1,5 @@
 {% set name = "dragon-ml-toolbox" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3.1" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dragon_ml_toolbox-{{ version }}.tar.gz
-  sha256: 8006ceda32ed579d5ebc2457b24ca285440e065e9231aaa7991369da173cb190
+  sha256: c943a787fa4a1250c6ee023c2f7819eb62ba3e7cfc23b9340cc7206ba3880f3a
 
 build:
   noarch: python
@@ -22,10 +22,21 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
-    - pandas
-    - matplotlib-base
+    - numpy <2.0
     - scikit-learn
+    - openpyxl
+    - miceforest
+    - matplotlib-base
+    - seaborn
+    - pandas
+    - polars
+    - imbalanced-learn
+    - statsmodels
+    - ipython
+    - joblib
+    - xgboost
+    - lightgbm
+    - shap
 
 test:
   imports:
