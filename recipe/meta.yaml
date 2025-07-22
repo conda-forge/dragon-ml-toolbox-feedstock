@@ -1,5 +1,5 @@
 {% set name = "dragon-ml-toolbox" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dragon_ml_toolbox-{{ version }}.tar.gz
-  sha256: 87ffd5ee94967a9237a2248086b5b2b6c403185db736e15ad971c7eb987d3688
+  sha256: a5488fc11bb1cbb548a18be2dc690489b8866f5cc7c5ebe22526ce7b8db53d43
 
 build:
   noarch: python
