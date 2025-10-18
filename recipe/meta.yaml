@@ -33,6 +33,7 @@ test:
     - pip
 
 about:
+  home: https://github.com/DrAg0n-BoRn/ML_tools
   summary: A collection of tools for data science and machine learning projects.
   license: MIT
   license_file:
