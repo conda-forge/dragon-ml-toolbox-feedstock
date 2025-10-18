@@ -1,6 +1,6 @@
 {% set name = "dragon-ml-toolbox" %}
-{% set version = "4.1.0" %}
-{% set python_min = "3.10" %}
+{% set version = "12.0.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dragon_ml_toolbox-{{ version }}.tar.gz
-  sha256: 87ffd5ee94967a9237a2248086b5b2b6c403185db736e15ad971c7eb987d3688
+  sha256: 20bce4a50ea20804049ded58a3abbf0de303ce8f81b7a08e521a566c3d72dced
 
 build:
   noarch: python
@@ -33,8 +33,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/DrAg0n-BoRn/ML_tools
-  summary: A collection of tools for data science and machine learning projects
+  summary: A collection of tools for data science and machine learning projects.
   license: MIT
   license_file:
     - LICENSE
