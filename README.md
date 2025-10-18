@@ -7,7 +7,7 @@ Home: https://github.com/DrAg0n-BoRn/ML_tools
 
 Package license: MIT
 
-Summary: A collection of tools for data science and machine learning projects
+Summary: A collection of tools for data science and machine learning projects.
 
 Current build status
 ====================
