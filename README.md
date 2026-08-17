@@ -7,16 +7,17 @@ Home: https://github.com/DrAg0n-BoRn/ML_tools
 
 Package license: MIT
 
-Summary: A collection of tools for data science and machine learning projects.
+Summary: Complete pipelines and helper tools for data science and machine learning projects.
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25967&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dragon-ml-toolbox-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/dragon-ml-toolbox-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/dragon-ml-toolbox-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -39,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `dragon-ml-toolbox` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install dragon-ml-toolbox
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install dragon-ml-toolbox
 ```
 
-It is possible to list all of the versions of `dragon-ml-toolbox` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add dragon-ml-toolbox
+# for installing globally
+pixi global install dragon-ml-toolbox
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `dragon-ml-toolbox` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search dragon-ml-toolbox --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search dragon-ml-toolbox --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search dragon-ml-toolbox --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -75,6 +118,8 @@ mamba repoquery whoneeds dragon-ml-toolbox --channel conda-forge
 # List dependencies of `dragon-ml-toolbox`:
 mamba repoquery depends dragon-ml-toolbox --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
