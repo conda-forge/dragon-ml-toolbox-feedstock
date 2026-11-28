@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "29.0.1"
+  version: "29.1.0"
 
 package:
   name: dragon-ml-toolbox
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/d/dragon-ml-toolbox/dragon_ml_toolbox-${{ version }}.tar.gz
-  sha256: 41d7c9bc2c83b08e4b6fc07e30eba2794e5da7a2ee3519ee94d855622f173007
+  sha256: a5c5c264b19625634282e39d0df39f5b530f4aa05a462a60496aaa5d2d66e745
 
 build:
   number: 0
